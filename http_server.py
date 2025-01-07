@@ -6,7 +6,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
-            self.wfile.write(b'3')
+            self.wfile.write(b'4')
         else:
             self.send_response(404)
             self.end_headers()
